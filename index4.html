@@ -1,0 +1,19 @@
+<!--promps the user to enter their name in a box-->
+<input id="name-input" type="text" placeholder="Enter your name" />
+<!--instead of pressing enter you click on the click me button in order to finalize your input-->
+<button id="my-button">Click Me</button>
+
+<!--tell the computer your writing script instead of html-->
+<!--var myButton set the value of true or false if the button has been click-->
+<!--var nameInput set the value the user put in to name input-->
+<!--myButton event lisiner tells the compuer to say hello 'user name' when the button has been clicked-->
+<script>
+   
+  var myButton = document.querySelector('#my-button'); 
+  var nameInput = document.querySelector('#name-input');
+  myButton.addEventListener('click', function () {
+    if (nameInput.value !== '') {
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
